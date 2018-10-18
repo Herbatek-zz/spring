@@ -14,6 +14,6 @@ public class App {
         System.out.println(dragonSlayer.fight());
         System.out.println(dragonSlayer.run());
 
-        Runtime.getRuntime().addShutdownHook(new Thread(context::close));
+        context.close();
     }
 }
