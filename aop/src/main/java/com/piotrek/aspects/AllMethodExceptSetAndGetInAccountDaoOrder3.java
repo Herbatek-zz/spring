@@ -11,11 +11,11 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 @Order(3)
-public class DemoLoggingAspect {
+public class AllMethodExceptSetAndGetInAccountDaoOrder3 {
 
     @Before("com.piotrek.aspects.SharePointcuts.allInDAONoGetterSetter()")
     public void DAOWithoutGetterAndSetter(JoinPoint joinPoint) {
-        System.out.println("////////////////// AccountDAO log for all methods except getters and setters - order 3 - START");
+        System.out.println("////////////////// AccountDAO log before for all methods except getters and setters - order 3 - START");
 
         MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
 

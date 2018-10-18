@@ -19,26 +19,26 @@ public class AccountDAO {
     }
 
     public boolean addAccount(Account account) {
-        System.out.println(this.getClass() + ": DOING MY DB WORK: Adding an account");
+        System.out.println(this.getClass() + ": addAccount()");
         return list.add(account);
     }
 
     public Account getAccountByIndex(int index) {
-        System.out.println(this.getClass() + ": DOING MY DB WORK: Returning account by index");
+        System.out.println(this.getClass() + ": getAccountByIndex");
         return list.get(index);
     }
 
     public List<Account> findAll() {
-        System.out.println(this.getClass() + ": DOING MY DB WORK: Returning all accounts");
+        System.out.println(this.getClass() + ": findAll()");
         return list;
     }
 
     public void setSth() {
-        System.out.println(this.getClass() + ": Fake setter");
+        System.out.println(this.getClass() + ": setSth()");
     }
 
     public void getSth() {
-        System.out.println(this.getClass() + ": Fake getter");
+        System.out.println(this.getClass() + ": getSth()");
     }
 
 }

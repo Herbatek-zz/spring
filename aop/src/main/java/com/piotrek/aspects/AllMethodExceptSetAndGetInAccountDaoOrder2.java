@@ -8,10 +8,10 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 @Order(2)
-public class DemoLoggingAspect2 {
+public class AllMethodExceptSetAndGetInAccountDaoOrder2 {
 
     @Before("com.piotrek.aspects.SharePointcuts.allInDAONoGetterSetter()")
     public void DAOWithoutGetterAndSetter2() {
-        System.out.println("////////////////// AccountDAO log for all methods except getters and setters - order 2");
+        System.out.println("////////////////// AccountDAO log before for all methods except getters and setters - order 2");
     }
 }

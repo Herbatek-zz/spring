@@ -3,11 +3,12 @@ package com.piotrek;
 import com.piotrek.account.Account;
 import com.piotrek.account.AccountDAO;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 
 public class App {
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
+        AbstractApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
 
         Account account = context.getBean("account",Account.class);
         AccountDAO accountDAO = context.getBean("accountDAO", AccountDAO.class);

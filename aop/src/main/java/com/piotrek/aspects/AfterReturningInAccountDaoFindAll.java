@@ -10,13 +10,13 @@ import java.util.List;
 
 @Aspect
 @Component
-public class AfterReturningAspect {
+public class AfterReturningInAccountDaoFindAll {
 
     @AfterReturning(pointcut = "com.piotrek.aspects.SharePointcuts.findInDAO()", returning = "result")
     public void DAOFind(JoinPoint joinPoint, List<Account> result) {
-        System.out.println("///////// AfterReturning /////////");
+        System.out.println("//////////////// AfterReturning in AccountDAO start //////////////////");
         for (Account a : result)
             System.out.println(a.toString());
-        System.out.println("//////////////////////////////////");
+        System.out.println("//////////////// AfterReturning in AccountDAO end /////////////////////");
     }
 }
