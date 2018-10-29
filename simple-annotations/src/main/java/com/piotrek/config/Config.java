@@ -1,4 +1,4 @@
-package com.piotrek;
+package com.piotrek.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

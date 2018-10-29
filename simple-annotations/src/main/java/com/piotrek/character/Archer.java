@@ -1,28 +1,26 @@
 package com.piotrek.character;
 
 import com.piotrek.armor.Armor;
+import com.piotrek.weapon.RangeWeapon;
 import com.piotrek.weapon.Weapon;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-
 @Component
-public class DragonSlayer extends Warrior {
+public class Archer extends Warrior {
 
-    public DragonSlayer(@Qualifier("dragonArmor") Armor armor) {
+    public Archer(Armor armor) {
         super(armor);
     }
 
-    @Value("${dragon-slayer.name}")
+    @Value("${archer.name}")
     public void setName(String name) {
         super.setName(name);
     }
 
     @Autowired
-    @Qualifier("sword")
-    public void setWeapon(Weapon weapon) {
+    public void setWeapon(@RangeWeapon Weapon weapon) {
         super.setWeapon(weapon);
     }
 
@@ -33,5 +31,4 @@ public class DragonSlayer extends Warrior {
     public String run() {
         return super.run();
     }
-
 }
