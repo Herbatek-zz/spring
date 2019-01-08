@@ -16,6 +16,7 @@
     <modules>
         <module>simple-annotations</module>
         <module>aop</module>
+        <module>environment</module>
     </modules>
 
 </project>
