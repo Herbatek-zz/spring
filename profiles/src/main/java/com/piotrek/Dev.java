@@ -1,6 +1,5 @@
-import org.springframework.context.annotation.Profile;
+package com.piotrek;
 
-@Profile("dev")
 public class Dev {
 
     public Dev() {
