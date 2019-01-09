@@ -19,6 +19,7 @@
         <module>environment</module>
         <module>profiles</module>
         <module>value-annotation-default-value</module>
+        <module>i18n</module>
     </modules>
 
     <dependencies>
