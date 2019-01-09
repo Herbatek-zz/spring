@@ -18,6 +18,15 @@
         <module>aop</module>
         <module>environment</module>
         <module>profiles</module>
+        <module>value-annotation-default-value</module>
     </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.1.3.RELEASE</version>
+        </dependency>
+    </dependencies>
 
 </project>
